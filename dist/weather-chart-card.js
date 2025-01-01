@@ -18247,7 +18247,8 @@ drawChart({ config, language, weather, forecastItems } = this) {
   if (config.forecast.precipitation_type === 'probability') {
     var precipUnit = '%';
   } else {
-    var precipUnit = lengthUnit === 'km' ? this.ll('units')['mm'] : this.ll('units')['in'];
+    // var precipUnit = lengthUnit === 'km' ? this.ll('units')['mm'] : this.ll('units')['in'];
+    var precipUnit = '';
   }
   const data = this.computeForecastData();
 
